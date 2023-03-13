@@ -20,3 +20,6 @@ echo "Número Base32 = $b32"
 
 let "b64 = 64#@_"
 echo "Número Base63 = $b64"
+
+echo
+echo $(())
