@@ -22,4 +22,14 @@ let "b64 = 64#@_"
 echo "Número Base63 = $b64"
 
 echo
-echo $(())
+echo $(()) $(()) $(()) $(())
+
+#Nota Importante:
+#----------------
+#Usar un digito fuera del rango de la base con la que se trabaja
+#provoca un mensaje de error.
+
+let "bad_oct = 081"
+#(Parcial) Mensaje de error:
+#bad_oct = 081: Valor demasiado grande para la base.
+#(el elemento de error es "081")
