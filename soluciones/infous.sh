@@ -11,3 +11,5 @@ GID=`echo $TEMPORAL | cut -f4 -d:`
 grep ":$GID:" /etc/group | cut -f1 -d:
 echo "Directorio Personal: "
 ls -ld `echo $TEMPORAL | cut -f6 -d:`
+
+#Script by:INovomiast
