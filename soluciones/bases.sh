@@ -33,3 +33,5 @@ let "bad_oct = 081"
 #(Parcial) Mensaje de error:
 #bad_oct = 081: Valor demasiado grande para la base.
 #(el elemento de error es "081")
+
+#Script by: INovomiast
