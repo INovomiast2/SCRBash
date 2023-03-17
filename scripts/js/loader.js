@@ -35,39 +35,44 @@ const lml_fi_chk = document.querySelector('#lm-load-fi-chk');
 
 //On page load: Open Modal and start loading Proccess!
 document.body.onload = () => {
-    mcontent.style.display = 'none';
-    lmodal.style.display = 'flex';
-    lml_f.style.display = 'block';
-    lml_s.style.display = 'none';
-    lml_t.style.display = 'none';
-    lml_fo.style.display = 'none';
-    lml_fi.style.display = 'none';
-    setTimeout(() => {
-        lml_f_sp.style.display = 'none';
-        lml_f_chk.style.display = 'inline-block'
-        lml_s.style.display = 'block';
+    if (getCookie('session') != "") {
+        mcontent.style.display = 'block';
+        document.querySelector('#loading-modal').remove();
+    } else {
+        mcontent.style.display = 'none';
+        lmodal.style.display = 'flex';
+        lml_f.style.display = 'block';
+        lml_s.style.display = 'none';
+        lml_t.style.display = 'none';
+        lml_fo.style.display = 'none';
+        lml_fi.style.display = 'none';
         setTimeout(() => {
-            lml_s_sp.style.display = 'none';
-            lml_s_chk.style.display = 'inline-block'
-            lml_t.style.display = 'block';
+            lml_f_sp.style.display = 'none';
+            lml_f_chk.style.display = 'inline-block'
+            lml_s.style.display = 'block';
             setTimeout(() => {
-                lml_t_sp.style.display = 'none';
-                lml_t_chk.style.display = 'inline-block';
-                lml_fo.style.display = 'block';
+                lml_s_sp.style.display = 'none';
+                lml_s_chk.style.display = 'inline-block'
+                lml_t.style.display = 'block';
                 setTimeout(() => {
-                    lml_fo_sp.style.display = 'none';
-                    lml_fo_chk.style.display = 'inline-block';
-                    lml_fi.style.display = 'block';
+                    lml_t_sp.style.display = 'none';
+                    lml_t_chk.style.display = 'inline-block';
+                    lml_fo.style.display = 'block';
                     setTimeout(() => {
-                        lml_fi_sp.style.display = 'none';
-                        lml_fi_chk.style.display = 'inline-block';
-                        //Destroy modal and show main main contain
-                        lmodal.style.display = 'none';
-                        mcontent.style.display = 'block';
-                        lmodal.remove();
-                    }, 5000);
+                        lml_fo_sp.style.display = 'none';
+                        lml_fo_chk.style.display = 'inline-block';
+                        lml_fi.style.display = 'block';
+                        setTimeout(() => {
+                            lml_fi_sp.style.display = 'none';
+                            lml_fi_chk.style.display = 'inline-block';
+                            //Destroy modal and show main main content
+                            lmodal.style.display = 'none';
+                            mcontent.style.display = 'block';
+                            lmodal.remove();
+                        }, 5000);
+                    }, Math.random() * (4700 - 2500 + 1)+ 2500);
                 }, Math.random() * (4700 - 2500 + 1)+ 2500);
-            }, Math.random() * (4700 - 2500 + 1)+ 2500);
-        }, 5000);
-    }, 3000);
+            }, 5000);
+        }, 3000);
+    }
 }

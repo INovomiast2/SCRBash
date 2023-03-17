@@ -114,6 +114,12 @@
               <a href="./script-view/?file=README_R1lznT"><h5 style="padding-left: 10px;">README</h5></a>
               <button type="button" class="btn btn-primary" style="display:block; margin-right:20px; margin-left:auto;"><i class="fa-solid fa-download"> Descargar</i></button>
             </div>
+            <br>
+            <div id="file" style="padding-left:15px; display:flex; vertical-align:middle">
+              <i class="fa-regular fa-file" style="font-size:30px"></i>
+              <a href="#cookies" onclick="alert(document.cookie);"><h5 style="padding-left: 10px;">Display Cookies</h5></a>
+              <button type="button"id="del-cookie" class="btn btn-primary" style="display:block; margin-right:20px; margin-left:auto;"><i class="fa-solid fa-download"> Descargar</i></button>
+            </div>
           </div>
           <!-- Directory: Soluciones -->
           <div id="dir-soluciones" style="display:none;">
@@ -148,6 +154,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Session Manager -->
+    <script src="./js/session.js"></script>
     <!-- Loader.js -->
     <script src="./js/loader.js"></script>
     <!-- FileManager Handler -->
