@@ -1,6 +1,6 @@
 #!/bin/bash
 
-palabra1 = "Hola"
+palabra1 = "Hola" #
 palabra2 = "Adios"
 palabra3 = "Hola"
 
