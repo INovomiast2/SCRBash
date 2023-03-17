@@ -92,12 +92,65 @@
     </div>
     
     <!-- Main Content -->
-    <main id="main-content" style="display:none;">
-        <h1>h1</h1>
+    <main id="main-content" style="display:block;">
+        <table style="border: 2px solid;">
+          <ol class="breadcrumb" id="bdc-nav">
+            <li class="breadcrumb-item active">Home</li>
+          </ol>
+          <div id="dir-home" style="display:block;">
+            <div id="dir" style="padding-left:15px; display:flex; vertical-align:middle;">
+              <i class="fa-regular fa-folder" style="font-size:30px"></i>
+              <a href="./?dir=Soluciones_NcrZ1B"><h5 style="padding-left: 10px;">Soluciones/</h5></a>
+            </div>
+            <br>
+            <div id="file" style="padding-left:15px; display:flex; vertical-align:middle">
+              <i class="fa-regular fa-file" style="font-size:30px"></i>
+              <a href="./script-view/?file=LICENSE_FXkhcC"><h5 style="padding-left: 10px;">LICENSE</h5></a>
+              <button type="button" class="btn btn-primary" style="display:block; margin-right:20px; margin-left:auto;"><i class="fa-solid fa-download"> Descargar</i></button>
+            </div>
+            <br>
+            <div id="file" style="padding-left:15px; display:flex; vertical-align:middle">
+              <i class="fa-regular fa-file" style="font-size:30px"></i>
+              <a href="./script-view/?file=README_R1lznT"><h5 style="padding-left: 10px;">README</h5></a>
+              <button type="button" class="btn btn-primary" style="display:block; margin-right:20px; margin-left:auto;"><i class="fa-solid fa-download"> Descargar</i></button>
+            </div>
+          </div>
+          <!-- Directory: Soluciones -->
+          <div id="dir-soluciones" style="display:none;">
+            <div id="dir" style="padding-left:15px; display:flex; vertical-align:middle;">
+              <i class="fa-regular fa-folder" style="font-size:30px"></i>
+              <a href="./"><h5 style="padding-left: 10px;">../</h5></a>
+            </div>
+            <br>
+            <div id="dir" style="padding-left:15px; display:flex; vertical-align:middle;">
+              <i class="fa-regular fa-folder" style="font-size:30px"></i>
+              <a href="./?dir=Scripts_3_cMTDax"><h5 style="padding-left: 10px;">Scripts_3/</h5></a>
+            </div>
+            <br>
+            <div id="dir" style="padding-left:15px; display:flex; vertical-align:middle;">
+              <i class="fa-regular fa-folder" style="font-size:30px"></i>
+              <a href="./?dir=Scripts_4_LKDrCf"><h5 style="padding-left: 10px;">Scripts_4/</h5></a>
+            </div>
+            <br>
+            <div id="dir" style="padding-left:15px; display:flex; vertical-align:middle;">
+              <i class="fa-regular fa-folder" style="font-size:30px"></i>
+              <a href="./?dir=Scripts_Admin_Sys_gPYdBn"><h5 style="padding-left: 10px;">Scripts_Administracion_Sistema/</h5></a>
+            </div>
+            <br>
+            <div id="dir" style="padding-left:15px; display:flex; vertical-align:middle;">
+              <i class="fa-regular fa-folder" style="font-size:30px"></i>
+              <a href="./?dir=Scripts_Code_Jobs_z8JLZe"><h5 style="padding-left: 10px;">Scripts_Administracion_Sistema/</h5></a>
+            </div>
+          </div>
+          
+        </table>
     </main>
 
     <!-- Bootstrap JS -->
     <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Loader.js -->
     <script src="./js/loader.js"></script>
+    <!-- FileManager Handler -->
+    <script src="./js/handler.js"></script>
 </body>
 </html>
