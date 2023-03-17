@@ -69,7 +69,7 @@
 
 
     <!-- Loading Modal -->
-    <div class="modal" style="display:none; backdrop-filter:blur(5px); border:transparent;">
+    <div class="modal" style="display:none; backdrop-filter:blur(5px); border:transparent;" id="loading-modal">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="border:transparent;">
             <div class="modal-header" style="background-color: #2d2d2d; color: white; border:solid black 2px; border-top-left-radius:5px; border-top-right-radius:5px;">
@@ -77,11 +77,11 @@
             </div>
             <div class="modal-body" style="background-color: #3f3f3f; color: white; border:solid black 2px;">
               <ul style="list-style: none">
-                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Request: api.github.com/api/v10/repos/...</li>
-                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Extrayendo datos de: raw.github.com/INov...</li>
-                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Escaneando por cambios en el Repositorio!</li>
-                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Actualizando datos antigüos!</li>
-                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Dando los toques finales!</li>
+                <li id="lm-load-f"><i class="fa-solid fa-check text-success" style="display: none;" id="lm-load-f-chk"></i><span id="lm-load-f-spn" style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Request: api.github.com/api/v10/repos/...</li>
+                <li id="lm-load-s"><i class="fa-solid fa-check text-success" style="display: none;" id="lm-load-s-chk"></i><span id="lm-load-s-spn" style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Extrayendo datos de: raw.github.com/INov...</li>
+                <li id="lm-load-t"><i class="fa-solid fa-check text-success" style="display: none;" id="lm-load-t-chk"></i><span id="lm-load-t-spn" style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Escaneando por cambios en el Repositorio!</li>
+                <li id="lm-load-fo"><i class="fa-solid fa-check text-success" style="display: none;" id="lm-load-fo-chk"></i><span id="lm-load-fo-spn" style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Actualizando datos antigüos!</li>
+                <li id="lm-load-fi"><i class="fa-solid fa-check text-success" style="display: none;" id="lm-load-fi-chk"></i><span id="lm-load-fi-spn" style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Dando los toques finales!</li>
               </ul>
             </div>
             <div class="modal-footer" style="background-color: #2d2d2d; color: white; border:solid black 2px; border-bottom-left-radius:5px; border-bottom-right-radius:5px;">
@@ -92,11 +92,12 @@
     </div>
     
     <!-- Main Content -->
-    <main style="display:none;">
+    <main id="main-content" style="display:none;">
         <h1>h1</h1>
     </main>
 
     <!-- Bootstrap JS -->
     <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./_js/loader.js"></script>
 </body>
 </html>
