@@ -29,8 +29,10 @@ function getCookie(cname) {
 
 if (getCookie('session') != "") {
     //pass
-} else {
-    document.cookie = "session=" + uuidv4() + "; path=/";
+}
+
+function genSession() {
+  document.cookie = "session=" + uuidv4() + "; path=/";
 }
 
 document.querySelector('#del-cookie').addEventListener('click', () => {
