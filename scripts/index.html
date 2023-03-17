@@ -1,1 +1,102 @@
-<iframe src="https://raw.githubusercontent.com/INovomiast-IESFuengirola1/Scripting-Bash-Soluciones/main/soluciones/aritmeticas.sh" frameborder="0"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts - SRCBash</title>
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom -->
+    <link rel="stylesheet" href="./src/css/home.css">
+  </head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SCR-Bash</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../">Incio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./">Scripts
+                    <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#credits" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCredits" role="button" aria-controls="offcanvasCredits">Creditos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- Credits Off-Canvas -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCredits" aria-labelledby="offcanvasCredits">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Creditos</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Desarrollado por: Iván Dimitri
+            <br>
+            Curso: 1ºSMR-B (2022-23).
+            <br>
+            Asignatura: S.O.M [Sistemas Operativos Monopuesto].
+            <br>
+            <br>
+            <div class="socials" style="text-align: center;">
+              <a href="https://instagram.com/iv_n.n_05" style="color: white; -webkit-text-stroke: 1px black;"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              <a href="https://twitter.com/ixkarmaofficial" style="color: white; -webkit-text-stroke: 1px black;"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              <a href="https://github.com/INovomiast-IESFuengirola1clear" style="color: white; -webkit-text-stroke: 1px black;"><i class="fa-brands fa-github fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    <!-- Loading Modal -->
+    <div class="modal" style="display:none; backdrop-filter:blur(5px); border:transparent;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="border:transparent;">
+            <div class="modal-header" style="background-color: #2d2d2d; color: white; border:solid black 2px; border-top-left-radius:5px; border-top-right-radius:5px;">
+              <h5 class="modal-title">Accediendo a Scripts</h5>
+            </div>
+            <div class="modal-body" style="background-color: #3f3f3f; color: white; border:solid black 2px;">
+              <ul style="list-style: none">
+                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Request: api.github.com/api/v10/repos/...</li>
+                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Extrayendo datos de: raw.github.com/INov...</li>
+                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Escaneando por cambios en el Repositorio!</li>
+                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Actualizando datos antigüos!</li>
+                <li><i class="fa-solid fa-check text-success" style="display: none;"></i><span style="display:inline-block" class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Dando los toques finales!</li>
+              </ul>
+            </div>
+            <div class="modal-footer" style="background-color: #2d2d2d; color: white; border:solid black 2px; border-bottom-left-radius:5px; border-bottom-right-radius:5px;">
+                <h6>!Una vez cargado todo podrá acceder a los scripts por completo¡</h6>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main style="display:none;">
+        <h1>h1</h1>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
