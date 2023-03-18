@@ -1,0 +1,3 @@
+# Formato: alias | ip | user | password | dir | prompt | protocol | descripción
+
+debian | 192.168.1.50 | root | root | /home/root/Escritorio|> | SSH | Mi Servidor ssh
