@@ -4,7 +4,7 @@ Bienvenido a SCRBash!
 ```bash
     ./SCRBash --
         ./Soluciones --
-            ./Scripts_3
+            ./Scripts_3 --
                 1. holamundo.sh
                 2. atributos.sh
                 3. suma.sh
@@ -21,7 +21,7 @@ Bienvenido a SCRBash!
                 14. combexps.sh
                 15. capuser.sh
                 16. infous.sh
-            ./Scripts_4
+            ./Scripts_4 --
                 1. comp_val.sh
                 2. comp_val_2.sh
                 3. chkargs.sh
@@ -48,7 +48,7 @@ Bienvenido a SCRBash!
                 24. return.sh
                 25. factorial.sh
                 26. fibonacci.sh
-            ./Scripts_Administracion_Sistema
+            ./Scripts_Administracion_Sistema --
                 1. defaultuser.sh
                 2. groupuser.sh
                 3. expireuser.sh
