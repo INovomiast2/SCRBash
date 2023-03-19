@@ -66,3 +66,7 @@ Bienvenido a SCRBash!
         README
         LICENSE
 ```
+
+TODOS LOS SCRIPTS HAN SIDO FINALIZADOS!!
+
+[![Run on Repl.it](https://replit.com/badge/github/INovomiast-IESFuengirola1/SCRBash)](https://replit.com/@IvanNovomiast/SCRBash?v=1)
