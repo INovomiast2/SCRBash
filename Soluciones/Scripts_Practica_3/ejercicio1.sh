@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo -n ""
+echo -n "Introduce una palabra: "
 read palabra1
 
-echo -n ""
+echo -n "Introduce otra palabra: "
 read palabra2
 
-echo -n ""
+echo -n "Y otra más: "
 read palabra3
 
 echo "Palabras: $palabra1 | $palabra2 | $palabra3"
