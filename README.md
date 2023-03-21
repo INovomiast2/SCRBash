@@ -63,6 +63,25 @@ Bienvenido a SCRBash!
                 12. backupftp.sh
             ./Scripts_Programacion_Tareas --
                 1. cache.sh
+            ./Scripts_Practica_3 --
+                1. reverse.sh
+                2. arg_error.sh
+                3. arg_error_else.sh
+                4. greaterthan.sh
+                5. chkgtlteq.sh
+                6. gtelsearit.sh
+                7. filedirchk.sh
+                8. pairs.sh
+                9. power.sh
+                10. divisionsubs.sh
+                11. 
+                12. 
+                13. 
+                14. 
+                15. 
+                16. 
+                17. 
+                18. 
         README
         LICENSE
 ```
