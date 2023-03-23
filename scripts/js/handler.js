@@ -22,7 +22,7 @@ const dir_nav = document.querySelector('#bdc-nav');
 const home_dir = document.querySelector('#dir-home');
 const soluciones_dir = document.querySelector('#dir-soluciones');
 const scripts_3_dir = document.querySelector('#dir-scr-3');
-
+const scripts_prac_3_dir = document.querySelector('#dir-scr-prct-3');
 
 if (directory == repo_content.HOME[2].dir_id) {
     const dir_nav_el = document.createElement('li');
@@ -42,4 +42,14 @@ if (directory == repo_content.SOLUCIONES[0].dir_id) {
     dir_nav.append(dir_nav_el);
     home_dir.style.display = 'none';
     scripts_3_dir.style.display = 'block';
+}
+
+if (directory == repo_content.SOLUCIONES[4].dir_id) {
+    const dir_nav_el = document.createElement('li');
+    dir_nav_el.classList.add('breadcrumb-item');
+    dir_nav_el.classList.add('active');
+    dir_nav_el.innerHTML = 'Soluciones  <b>/</b>  Scripts_Practica_3  <b>/</b>';
+    dir_nav.append(dir_nav_el);
+    home_dir.style.display = 'none';
+    scripts_prac_3_dir.style.display = 'block';
 }
