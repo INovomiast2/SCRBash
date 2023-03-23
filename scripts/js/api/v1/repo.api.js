@@ -53,6 +53,12 @@ const repo_content = {
             "type": "dir",
             "author": "INovomiast",
             "dir_id": "Scripts_Prac_3_gVkZGm"
+        },
+        {
+            "name": "TestDir",
+            "type": "dir",
+            "author": "INovomiast",
+            "dir_id": "TESTDIR_ID"
         }
     ]
 }
