@@ -44,6 +44,8 @@ if (directory == repo_content.SOLUCIONES[0].dir_id) {
     scripts_3_dir.style.display = 'block';
 }
 
+alert(repo_content.SOLUCIONES[4].dir_id)
+
 if (directory == repo_content.SOLUCIONES[4].dir_id) {
     const dir_nav_el = document.createElement('li');
     dir_nav_el.classList.add('breadcrumb-item');
