@@ -32,7 +32,32 @@ const scrP3 = ["reverse.sh","arg_error.sh","arg_error_else.sh","greaterthan.sh",
 if (dir == dirs[0]) {
     for (x in scr3f) {
         if (script == scr3f[x]) {
-            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_3/${script}`)
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_3/${script}`);
+        }
+    }
+} else if (dir == dirs[1]) {
+    for (x in scr4f) {
+        if (script == scr4f[x]) {
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_4/${script}`);
+        }
+    }
+} else if (dir == dirs[2]) {
+    for (x in scrASf) {
+        if (script == scrASf[x]) {
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Administracion_Sistema/${script}`);
+        }
+    }
+} else if (dir == dirs[3]) {
+    for (x in scrPTf) {
+        if (script == scrPTf[x]) {
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Programacion_Tareas/${script}`);
+        }
+    }
+} else if (dir == dirs[3]) {
+    for (x in scrP3f) {
+        if (script == scrP3f[x]) {
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Programacion_Tareas/${script}`);
         }
     }
 }
+
