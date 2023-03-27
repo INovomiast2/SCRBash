@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * scripthandle.js - GH Raw Data Handler.
  */
@@ -34,3 +35,10 @@ if (dir == dirs[0]) {
         console.log(x);
     }
 }
+=======
+/** 
+  sh.js - GH Raw Content Manager
+*/
+
+const qString = window.location.search
+>>>>>>> 0876ac7cbd1a78c5f0942b303f2b9cb325f9dd1a

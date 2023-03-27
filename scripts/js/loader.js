@@ -66,11 +66,11 @@ document.body.onload = () => {
                             lmodal.style.display = 'none';
                             mcontent.style.display = 'block';
                             lmodal.remove();
-                        }, 2000);
-                    }, 1500);
-                }, 1500);
-            }, 1500);
-        }, 1500);
+                        }, 1500);
+                    }, 1000);
+                }, 1000);
+            }, 1000);
+        }, 1000);
     } else {
         mcontent.style.display = 'none';
         lmodal.style.display = 'flex';
