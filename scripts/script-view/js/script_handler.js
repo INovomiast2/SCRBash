@@ -31,6 +31,8 @@ const scrP3 = ["reverse.sh","arg_error.sh","arg_error_else.sh","greaterthan.sh",
 
 if (dir == dirs[0]) {
     for (x in scr3f) {
-        console.log(scr3f[x]);
+        if (script == scr3f[x]) {
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_3/${script}`)
+        }
     }
 }
