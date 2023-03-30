@@ -15,7 +15,9 @@
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/b/b3/Terminalicon2.png" type="image/png" />
 </head>
 <body>
-    
+    <header>
+        <button type="button" class="btn btn-warning" id="goback-btn" style="margin-left: 10px; margin-top: 5px;"><i class="fa-solid fa-arrow-left fa-xl"></i></button>
+    </header>
     <center>
         <div id="code-view" style="text-align:left; background-color:#333; width: 50%; height:500px; margin-top:1%; color:white; border-radius: 12px;">
             <p id="display-code" style="padding-left: 10px; padding-top:10px;"></p>
@@ -30,7 +32,10 @@
     <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Fetcher.js - Fetch GitHub Code -->
     <script src="./js/fetcher.js"></script>
+    <!-- File API - A simple API for FileViewer -->
+    <script src="../js/api/v1/repo.api.js"></script>
     <!-- ScriptHandler.js - Handels all URL Params and extras -->
     <script src="./js/script_handler.js"></script>
+
 </body>
 </html>

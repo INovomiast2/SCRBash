@@ -61,3 +61,14 @@ if (dir == dirs[0]) {
     }
 }
 
+//Extra: Go Back Button
+
+const gb_btn = document.querySelector('#goback-btn');
+
+gb_btn.addEventListener('click', () => {
+    if (dir == dirs[0]) {
+        window.location.href = `../?dir=${repo_content.SOLUCIONES[0].dir_id}`;
+    }else if (dir == dirs[1]) {
+        window.location.href = `../?dir=${repo_content.SOLUCIONES[1].dir_id}`;
+    }
+});
