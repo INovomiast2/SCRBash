@@ -9,7 +9,7 @@ const script = URLParams.get('script');
 const dir = URLParams.get('dir');
 
 //Avaliable Dirs to work with
-const dirs = ['scr3', 'scr4', 'scrAS', 'scrPT', 'scrP3'];
+const dirs = ['scr3', 'scr4', 'scrAS', 'scrPT', 'scrP3', 'scrP4'];
 
 //Dir: scr3/*
 const scr3f = ["holamundo.sh","atributos.sh","suma.sh","mayusculas.sh","matrices.sh","let.sh","exp-ari-nlet.sh","reales.sh","aritmeticas.sh","bases.sh","operadores-fechas.sh","operadores-comp.sh","ccadenas.sh","combexps.sh","capuser.sh","infous.sh"];
@@ -24,8 +24,10 @@ const scrASf = ["defaultuser.sh","groupuser.sh","expireuser.sh","userexists.sh",
 const scrPTf = ['cache.sh'];
 
 //Dir: scrP3/*
-const scrP3 = ["reverse.sh","arg_error.sh","arg_error_else.sh","greaterthan.sh","chkgtlteq.sh","gtelsearit.sh","filedirchk.sh","pairs.sh","power.sh","divisionsubs.sh"];
+const scrP3f = ["reverse.sh","arg_error.sh","arg_error_else.sh","greaterthan.sh","chkgtlteq.sh","gtelsearit.sh","filedirchk.sh","pairs.sh","power.sh","divisionsubs.sh"];
 
+//Dir scrP4/*
+const scrP4f = ["lecture.sh", "dir_exists.sh", "backup.sh", "copia.sh", "now_info.sh", "nlineas.sh", "multi.sh", "script_info.sh", "calc.sh"];
 
 
 
@@ -56,7 +58,13 @@ if (dir == dirs[0]) {
 } else if (dir == dirs[3]) {
     for (x in scrP3f) {
         if (script == scrP3f[x]) {
-            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Programacion_Tareas/${script}`);
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Practica_3/${script}`);
+        }
+    }
+} else if (dir == dirs[5]) {
+    for (x in scrP4f) {
+        if (script == scrP4f[x]) {
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Practica_4/${script}`);
         }
     }
 }
@@ -70,5 +78,9 @@ gb_btn.addEventListener('click', () => {
         window.location.href = `../?dir=${repo_content.SOLUCIONES[0].dir_id}`;
     }else if (dir == dirs[1]) {
         window.location.href = `../?dir=${repo_content.SOLUCIONES[1].dir_id}`;
+    }else if (dir == dirs[2]) {
+        window.location.href = `../?dir=${repo_content.SOLUCIONES[2].dir_id}`;
+    }else if (dir == dirs[5]) {
+        window.location.href = `../?dir=${repo_content.SOLUCIONES[5].dir_id}`;
     }
 });
