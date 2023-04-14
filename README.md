@@ -76,13 +76,13 @@ El orden que se indica aquí es igual al orden de los ejercicios.
                 8. pairs.sh -- Finalizado ✔️
                 9. power.sh -- Finalizado ✔️
                 10. divisionsubs.sh -- Finalizado ✔️
-                11. 
-                12. 
-                13. 
-                14. 
-                15. 
-                16. 
-                17. 
+                11. secure.sh  -- Finalizado ✔️
+                12. check.sh  -- Finalizado ✔️
+                13. content.sh  -- Finalizado ✔️
+                14. switch-name.sh  -- Finalizado ✔️ 
+                15. more-info.sh -- Finalizado ✔️
+                16. shw-exec.sh -- Finalizado ✔️
+                17. shw-num.sh -- Finalizado ✔️
                 18. 
             ./Scripts_Practica_4 --
                 1. lecture.sh -- Finalizado ✔️
@@ -91,9 +91,9 @@ El orden que se indica aquí es igual al orden de los ejercicios.
                 4. copia.sh -- Finalizado ✔️
                 5. now_info.sh -- Finalizado ✔️
                 6. nlineas.sh  -- Finalizado ✔️
-                7. multi.sh
+                7. multi.sh -- Finalizado ✔️
                 8. script_info.sh -- Finalizado ✔️
-                9. calc.sh
+                9. calc.sh -- Finalizado ✔️
         README
         LICENSE
 ```
