@@ -94,6 +94,8 @@ El orden que se indica aquí es igual al orden de los ejercicios.
                 7. multi.sh -- Finalizado ✔️
                 8. script_info.sh -- Finalizado ✔️
                 9. calc.sh -- Finalizado ✔️
+            ./Script_Comandos_Linux --
+                1. main.sh -- Finalizado ✔️
         README
         LICENSE
 ```
