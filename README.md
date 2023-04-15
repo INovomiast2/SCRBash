@@ -83,7 +83,7 @@ El orden que se indica aquí es igual al orden de los ejercicios.
                 15. more-info.sh -- Finalizado ✔️
                 16. shw-exec.sh -- Finalizado ✔️
                 17. shw-num.sh -- Finalizado ✔️
-                18. 
+                18. exists.sh -- Finalizado ✔️
             ./Scripts_Practica_4 --
                 1. lecture.sh -- Finalizado ✔️
                 2. dir_exists.sh -- Finalizado ✔️
