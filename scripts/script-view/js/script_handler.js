@@ -7,9 +7,10 @@ const URLParams = new URLSearchParams(qString);
 
 const script = URLParams.get('script');
 const dir = URLParams.get('dir');
+const file = URLParams.get('file');
 
 //Avaliable Dirs to work with
-const dirs = ['scr3', 'scr4', 'scrAS', 'scrPT', 'scrP3', 'scrP4'];
+const dirs = ['scr3', 'scr4', 'scrAS', 'scrPT', 'scrP3', 'scrP4', 'scrCL'];
 
 //Dir: scr3/*
 const scr3f = ["holamundo.sh","atributos.sh","suma.sh","mayusculas.sh","matrices.sh","let.sh","exp-ari-nlet.sh","reales.sh","aritmeticas.sh","bases.sh","operadores-fechas.sh","operadores-comp.sh","ccadenas.sh","combexps.sh","capuser.sh","infous.sh"];
@@ -24,11 +25,13 @@ const scrASf = ["defaultuser.sh","groupuser.sh","expireuser.sh","userexists.sh",
 const scrPTf = ['cache.sh'];
 
 //Dir: scrP3/*
-const scrP3f = ["reverse.sh","arg_error.sh","arg_error_else.sh","greaterthan.sh","chkgtlteq.sh","gtelsearit.sh","filedirchk.sh","pairs.sh","power.sh","divisionsubs.sh"];
+const scrp3f = ['reverse.sh', 'arg_error.sh', 'arg_error_else.sh', 'greaterthan.sh', 'chkgtlteq.sh', 'gtelsearit.sh', 'filedirchk.sh', 'pairs.sh', 'power.sh', 'divisionsubs.sh', 'secure.sh', 'check.sh', 'content.sh', 'switch-name.sh', 'more-info.sh', 'shw-exec.sh', 'shw-num.sh', 'exists.sh'];
 
-//Dir scrP4/*
+//Dir: scrP4/*
 const scrP4f = ["lecture.sh", "dir_exists.sh", "backup.sh", "copia.sh", "now_info.sh", "nlineas.sh", "multi.sh", "script_info.sh", "calc.sh"];
 
+//Dir: scrCL
+const srcCLf = "main.sh";
 
 
 if (dir == dirs[0]) {
@@ -61,12 +64,26 @@ if (dir == dirs[0]) {
             getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Practica_3/${script}`);
         }
     }
+} else if (dir == dirs[4]) {
+    for (x in scrp3f) {
+        if (script == scrp3f[x]) {
+            getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Practica_3/${script}`);
+        }
+    }
 } else if (dir == dirs[5]) {
     for (x in scrP4f) {
         if (script == scrP4f[x]) {
             getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Scripts_Practica_4/${script}`);
         }
     }
+} else if (dir == dirs[6]) {
+    if (script == srcCLf) {
+        getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/Soluciones/Script_Comandos_Linux/${script}`)
+    }
+} else if (file == "README") {
+    getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/${file}.md`);
+} else if (file == "LICENSE") {
+    getGitHubScript(`https://raw.githubusercontent.com/INovomiast-IESFuengirola1/SCRBash/main/${file}`);
 }
 
 //Extra: Go Back Button
@@ -82,5 +99,13 @@ gb_btn.addEventListener('click', () => {
         window.location.href = `../?dir=${repo_content.SOLUCIONES[2].dir_id}`;
     }else if (dir == dirs[5]) {
         window.location.href = `../?dir=${repo_content.SOLUCIONES[5].dir_id}`;
+    }else if (dir == dirs[6]) {
+        window.location.href = `../?dir=${repo_content.SOLUCIONES[6].dir_id}`;
+    }else if (dir == dirs[4]) {
+        window.location.href = `../?dir=${repo_content.SOLUCIONES[4].dir_id}`;
+    }else if (file == "README") {
+        window.location.href = `../?dir=${repo_content.HOME[0]}`;
+    }else if (file == "LICENSE") {
+        window.location.href = `../?dir=${repo_content.HOME[0]}`;
     }
 });
