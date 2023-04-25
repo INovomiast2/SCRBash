@@ -1,0 +1,11 @@
+[ copiar.sh - Por: INovomiast ]
+
+Un sencillo shell script para copiar un directorio
+a otro al pasarselo como parametro!!
+
+-- Parametros --
+
+"-h": Muestra este mensaje de ayuda.
+"-c": Copia un directorio a otro pasados por parametro.
+"-d": Abre el modo DEBUG.
+"-gh": Muestra el Repositorio de SCRBash.
