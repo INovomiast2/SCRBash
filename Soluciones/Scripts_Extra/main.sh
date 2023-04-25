@@ -36,6 +36,11 @@ function script_doctor()
   bash analitycs/doctor.sh
 }
 
+function script_install() 
+{
+  sudo ./install.sh
+}
+
 
 #Check if params is not 0!
 if [ $# -lt 1 ]; then
@@ -48,6 +53,7 @@ else
         "--start") script_start ;;
         "--help") script_help ;;
         "--doctor") script_doctor ;;
+        "--install") script_install ;;
      esac
 fi
 

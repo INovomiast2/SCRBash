@@ -17,7 +17,7 @@ param2="--doctor"
 param3="--help"
 param4="--commit"
 param5="--report"
-param6="-"
+param6="--install"
 
 
 
@@ -27,6 +27,7 @@ echo -e "\e[31m-------------------------- \e[0m"
 echo "$script_name || Version: $script_version"
 
 echo -e "\e[31m-------------------------- \e[0m"
+echo -e "\e[32m$param6\e[0m - Starts the Install.sh file."
 echo -e "\e[32m$param1\e[0m - Starts the ScriptManager."
 echo -e "\e[32m$param2\e[0m - Starts the ScriptDoctor (DEBUGER)."
 echo -e "\e[32m$param3\e[0m - Shows this HELP message."

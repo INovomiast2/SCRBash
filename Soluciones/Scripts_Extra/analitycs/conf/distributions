@@ -1,0 +1,7 @@
+Origin: INovomiast
+Label: SCRBash@doctor
+Codename: focal
+Architectures: amd64
+Components: main
+Description: SCRBash Script Manager DOCTOR
+
