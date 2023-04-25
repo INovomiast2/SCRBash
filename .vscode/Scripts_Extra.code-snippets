@@ -1,0 +1,15 @@
+{
+	"Generates a SCRBash Banner": {
+		"prefix": "scr:banner",
+		"body": [
+		  "#==================================================#",
+		  "#                                                  #",
+		  "# Script Name v.0.0                                #",
+		  "#                                                  #",
+		  "# Developed by: Developer                          #",
+		  "#                                                  #",
+		  "#==================================================#"
+		],
+		"description": "Generates a SCRBash Banner"
+	  }
+}
