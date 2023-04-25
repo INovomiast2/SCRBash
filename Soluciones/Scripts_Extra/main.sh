@@ -28,7 +28,7 @@ function script_start()
 
 function script_help() 
 {
-  bash docs/help.sh
+  bash help.sh
 }
 
 function script_doctor() 

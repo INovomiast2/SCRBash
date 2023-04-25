@@ -96,6 +96,12 @@ El orden que se indica aquí es igual al orden de los ejercicios.
                 9. calc.sh -- Finalizado ✔️
             ./Script_Comandos_Linux --
                 1. main.sh -- Finalizado ✔️
+            ./Scripts_Extra
+                1. main.sh -- Bajo Desarrollo 👷
+                2. doctor.sh -- Bajo Desarrollo 👷
+                3. help.sh -- Bajo Desarrollo 👷
+                4. install.sh  -- Bajo Desarrollo 👷
+                5. require.txt -- Bajo Desarrollo 👷
         README
         LICENSE
 ```

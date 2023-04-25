@@ -10,4 +10,6 @@
 
 echo "DOCTOR WAS EXECUTED"
 
+echo ""
+
 # Script by: INovomiast
